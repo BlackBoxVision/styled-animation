@@ -17,7 +17,7 @@ npm install --save styled-animation
 
 ## Usage
 
-### Styled-animations supports all the animations provided by [react-animations](http://react-animations.herokuapp.com/)
+### Styled-animation supports all the animations provided by [react-animations](http://react-animations.herokuapp.com/)
 
 The usage is really simple:
 
@@ -27,7 +27,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const Example = () => (
-    <Animation name="fadeInOut" duration="2s" timing="ease-out">
+    <Animation name="fadeOutDown" duration="2s" timing="ease-out">
         Hey!, i'm animated!
     </Animation>
 );
