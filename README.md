@@ -24,7 +24,7 @@ import { Animation } from 'styled-animation';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Example = (
+const Example = () => (
     <Animation name="fadeInOut" duration="2s" timing="ease-out">
         Hey!, i'm animated!
     </Animation>
