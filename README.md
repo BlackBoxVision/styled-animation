@@ -30,7 +30,7 @@ const Example = () => (
     </Animation>
 );
 
-ReactDOM.render(<Example />, document.getElementById("root");
+ReactDOM.render(<Example />, document.getElementById("root"));
 ```
 
 styled-animations supports all the animations provided by react-animations
