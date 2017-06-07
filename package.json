@@ -1,6 +1,6 @@
 {
   "name": "styled-animation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Handle animations with style",
   "main": "dist/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": "git+https://github.com/BlackBoxVision/styled-animation.git",
   "keywords": [
-    "styled-component",
+    "styled-components",
     "animate.css",
     "react-animations"
   ],
