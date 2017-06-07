@@ -1,5 +1,5 @@
 # Styled Animation
-> Handle animations with style.
+> Handle animations with style :sunglasses:.
 
 ## Installation
 
