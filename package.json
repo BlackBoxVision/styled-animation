@@ -1,7 +1,7 @@
 {
   "name": "styled-animation",
-  "version": "1.0.0",
-  "description": "Multer Storage Engine to save uploads directly to MongoDB GridFS",
+  "version": "1.0.1",
+  "description": "Handle animations with style",
   "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf ./dist",
@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/BlackBoxVision/multer-gridfs#readme",
   "dependencies": {
-    "gridfs-stream": "^1.1.1",
     "react-animations": "^0.1.0",
     "styled-components": "^2.0.0"
   },
