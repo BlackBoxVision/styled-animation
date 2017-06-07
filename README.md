@@ -17,6 +17,8 @@ npm install --save styled-animation
 
 ## Usage
 
+### Styled-animations supports all the animations provided by [react-animations](http://react-animations.herokuapp.com/)
+
 The usage is really simple:
 
 ```jsx
@@ -33,7 +35,6 @@ const Example = () => (
 ReactDOM.render(<Example />, document.getElementById("root"));
 ```
 
-styled-animations supports all the animations provided by react-animations
 
 
 ## Issues
