@@ -1,0 +1,38 @@
+{
+  "name": "styled-animation",
+  "version": "1.0.0",
+  "description": "Multer Storage Engine to save uploads directly to MongoDB GridFS",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "compile": "babel ./src -d ./dist",
+    "build": "yarn run clean && yarn run compile",
+    "yarn-publish": "yarn run build && yarn publish",
+    "test": "mocha ./test --compilers js:babel-register --require babel-polyfill",
+    "coverage": "babel-node ./node_modules/.bin/isparta cover _mocha"
+  },
+  "repository": "git+https://github.com/BlackBoxVision/styled-animation.git",
+  "keywords": [
+    "styled-component",
+    "animate.css",
+    "react-animations"
+  ],
+  "author": "BlackBox Vision",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlackBoxVision/styled-animation/issues"
+  },
+  "homepage": "https://github.com/BlackBoxVision/multer-gridfs#readme",
+  "dependencies": {
+    "gridfs-stream": "^1.1.1",
+    "react-animations": "^0.1.0",
+    "styled-components": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-babili": "^0.0.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "rimraf": "^2.5.4"
+  }
+}
