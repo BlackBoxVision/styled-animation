@@ -1,4 +1,5 @@
 # Styled Animation
+[![npm version](https://badge.fury.io/js/styled-animation.svg)](https://badge.fury.io/js/styled-animation)
 > Handle animations with style :sunglasses:.
 
 ## Installation
