@@ -1,6 +1,9 @@
 # Styled Animation
-[![npm version](https://badge.fury.io/js/styled-animation.svg)](https://badge.fury.io/js/styled-animation)
 > Handle animations with style :sunglasses:.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/styled-animation.svg)](https://badge.fury.io/js/styled-animation) [![npm downloads](https://img.shields.io/npm/dm/styled-animation.svg)](https://www.npmjs.com/package/styled-animation)
+
+[![NPM](https://nodei.co/npm/styled-animation.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/styled-animation/) [![NPM](https://nodei.co/npm-dl/styled-animation.png?months=9&height=2)](https://nodei.co/npm/styled-animation/) 
 
 ## Installation
 
@@ -56,7 +59,7 @@ ReactDOM.render(<Example />, document.getElementById("root"));
 
 ## Issues
 
-If you found a bug, or you have an answer, or whatever. Please, open an [issue](https://github.com/BlackBoxVision/styled-animation/issues). I will do the best to fix it, or help you.
+If you found a bug, or you have an answer, or whatever. Please, open an [issue](https://github.com/BlackBoxVision/styled-animation/issues). We will do our best to fix it.
 
 ## Contributing
 
