@@ -35,6 +35,22 @@ const Example = () => (
 ReactDOM.render(<Example />, document.getElementById("root"));
 ```
 
+Also is possible to merge multiple animations, separating each animation name by a space:
+
+```jsx
+import { Animation } from 'styled-animation';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const Example = () => (
+    <Animation name="shake bounce">
+        Hey!, i'm mixed!
+    </Animation>
+);
+
+ReactDOM.render(<Example />, document.getElementById("root"));
+```
+
 
 
 ## Issues
