@@ -81,10 +81,12 @@ const animationList = [
     "zoomOutUp"
 ];
 
+const style = {height: "250px", textAlign: "center", paddingTop: "200px", fontSize: "36px", color: "gray", background: "linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)"};
+
 const stories = storiesOf('Animation', module);
 
 animationList.forEach(animation => stories.add(animation, () => (
-    <div style={{textAlign: "center", paddingTop: "200px"}}>
+    <div style={style}>
         <Animation name={animation}>
             Hey!, i'm animated
         </Animation>
