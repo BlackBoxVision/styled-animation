@@ -2,3 +2,5 @@ src
 .npmignore
 .idea
 .babelrc
+stories
+.storybook
