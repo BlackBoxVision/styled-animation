@@ -1,7 +1,7 @@
 # Styled Animation
 > Handle animations with style :sunglasses:.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/styled-animation.svg)](https://badge.fury.io/js/styled-animation) [![npm downloads](https://img.shields.io/npm/dm/styled-animation.svg)](https://www.npmjs.com/package/styled-animation)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/styled-animation.svg)](https://badge.fury.io/js/styled-animation) [![npm downloads](https://img.shields.io/npm/dm/styled-animation.svg)](https://www.npmjs.com/package/styled-animation) [![Known Vulnerabilities](https://snyk.io/test/github/blackboxvision/styled-animation/badge.svg)](https://snyk.io/test/github/blackboxvision/styled-animation)
 
 [![NPM](https://nodei.co/npm/styled-animation.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/styled-animation/) [![NPM](https://nodei.co/npm-dl/styled-animation.png?months=9&height=2)](https://nodei.co/npm/styled-animation/) 
 
