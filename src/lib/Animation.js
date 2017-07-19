@@ -11,6 +11,7 @@ const frames = (name) => {
 
 const Animation = styled.div`
     animation: ${({name}) => frames(name)} ${({duration}) => duration? duration : "1s"} ${({timing}) => timing? timing : "ease"};
+    animation-fill-mode: ${({fillMode}) => fillMode? fillMode : "forwards"};
 `;
 
 export default Animation;
