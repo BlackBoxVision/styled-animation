@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { Animation } from '../src';
 
 const animationList = [
-    "bouceOut",
+    "bounceOut",
     "bounce",
     "bounceIn",
     "bounceInDown",
@@ -87,7 +87,7 @@ const stories = storiesOf('Animation', module);
 
 animationList.forEach(animation => stories.add(animation, () => (
     <div style={style}>
-        <Animation name={animation}>
+        <Animation name={animation} onEnd={_ => console.info("Finished!")}>
             Hey!, i'm animated
         </Animation>
     </div>

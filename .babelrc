@@ -1,4 +1,4 @@
 {
-  "presets": ["es2015", "stage-0", "babili"],
+  "presets": ["es2015", "stage-0", "react", "babili"],
   "plugins": ["transform-runtime"]
 }

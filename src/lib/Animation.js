@@ -1,6 +1,9 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import styled, { keyframes } from 'styled-components';
-
 import * as animations from 'react-animations';
+
+import { whichEndEvent } from './Helper';
 
 const mergeAnimations = (animationArray) => animationArray.reduce((prev, next, index) => animations.merge(index? prev : animations[prev], animations[next]));
 
@@ -14,4 +17,34 @@ const Animation = styled.div`
     animation-fill-mode: ${({fillMode}) => fillMode? fillMode : "forwards"};
 `;
 
-export default Animation;
+class AnimationContainer extends React.Component {
+
+    _setAnimationLifeCycle = ref => {
+        if(ref) {
+            const { onEnd } = this.props;
+            const endEvent = whichEndEvent();
+
+            const node = ReactDOM.findDOMNode(ref);
+            node.addEventListener(endEvent, onEnd);
+        }
+
+    };
+
+    render() {
+        const { children, name, duration, timing, fillMode } = this.props;
+        const animationProps = {
+            name,
+            duration,
+            timing,
+            fillMode
+        };
+
+        return (
+            <Animation ref={animation => this._setAnimationLifeCycle(animation)} {...animationProps} >
+                {children}
+            </Animation>
+        )
+    }
+}
+
+export default AnimationContainer;
