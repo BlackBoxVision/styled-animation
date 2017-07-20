@@ -54,7 +54,15 @@ const Example = () => (
 
 ReactDOM.render(<Example />, document.getElementById("root"));
 ```
+## Props
 
+| Prop  |  Description  |
+|---|---|
+| name: String  | Name or names of the animations to start  |
+| duration: String  | Indicates the duration of the animation  |
+| timing: String  | Indicates the timing of the animation  |
+| fillMode: String  | Indicates the animation-fill-mode value  |
+| onEnd: Function  | Callback called when the animation keyframes finish |
 
 
 ## Issues
