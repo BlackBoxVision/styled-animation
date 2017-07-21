@@ -87,7 +87,11 @@ const stories = storiesOf('Animation', module);
 
 animationList.forEach(animation => stories.add(animation, () => (
     <div style={style}>
-        <Animation name={animation} onEnd={_ => console.info(`onEnd: ${animation}`)}>
+        <Animation
+            name={animation}
+            onStart={_ => console.info(`onStart: ${animation}`)}
+            onEnd={_ => console.info(`onEnd: ${animation}`)}
+        >
             Hey!, i'm animated
         </Animation>
     </div>

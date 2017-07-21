@@ -1,16 +1,25 @@
-export function whichEndEvent() {
-    let t;
-    const el = document.createElement('fakeelement');
-    const transitions = {
-        animation:'animationend',
-        OAnimation:'oAnimationEnd',
-        MozAnimation:'animationend',
-        WebkitAnimation:'webkitTAnimationnEnd'
-    };
+const endEvents = {
+    animation:'animationend',
+    OAnimation:'oAnimationEnd',
+    MozAnimation:'animationend',
+    WebkitAnimation:'webkitAnimationEnd'
+};
 
-    for(t in transitions){
+const startEvents = {
+    animation:'animationstart',
+    OAnimation:'oAnimationStart',
+    MozAnimation:'animationStart',
+    WebkitAnimation:'webkitAnimationStart'
+};
+
+function whichEvent(events) {
+    const el = document.createElement('fakeelement');
+    for(const t in events) {
         if( el.style[t] !== undefined ){
-            return transitions[t];
+            return events[t];
         }
     }
 }
+
+export const whichStartEvent = _ => whichEvent(startEvents);
+export const whichEndEvent = _ => whichEvent(endEvents);

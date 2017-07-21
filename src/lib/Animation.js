@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import styled, { keyframes } from 'styled-components';
 import * as animations from 'react-animations';
 
-import { whichEndEvent } from './Helper';
+import { whichStartEvent, whichEndEvent } from './Helper';
 
 const mergeAnimations = (animationArray) => animationArray.reduce((prev, next, index) => animations.merge(index? prev : animations[prev], animations[next]));
 
@@ -21,13 +21,12 @@ class AnimationContainer extends React.Component {
 
     _setAnimationLifeCycle = ref => {
         if(ref) {
-            const { onEnd } = this.props;
-            const endEvent = whichEndEvent();
+            const { onStart, onEnd } = this.props;
 
             const node = ReactDOM.findDOMNode(ref);
-            node.addEventListener(endEvent, onEnd);
+            node.addEventListener(whichStartEvent(), onStart);
+            node.addEventListener(whichEndEvent(), onEnd);
         }
-
     };
 
     render() {
