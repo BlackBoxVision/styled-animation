@@ -1,6 +1,6 @@
 {
   "name": "styled-animation",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Handle animations with style",
   "main": "dist/index.js",
   "scripts": {
