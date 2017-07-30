@@ -62,6 +62,7 @@ ReactDOM.render(<Example />, document.getElementById("root"));
 | duration: String  | Indicates the duration of the animation  |
 | timing: String  | Indicates the timing of the animation  |
 | fillMode: String  | Indicates the animation-fill-mode value  |
+| onStart: Function  | Callback called when the animation keyframes start |
 | onEnd: Function  | Callback called when the animation keyframes finish |
 
 
