@@ -65,11 +65,11 @@ ReactDOM.render(<Example />, document.getElementById('root'));
 
 ## Issues
 
-If you found a bug, or you have an answer, or whatever. Please, open an [issue](https://github.com/BlackBoxVision/styled-animation/issues). We will do our best to fix it.
+Please, open an [issue](https://github.com/BlackBoxVision/styled-animation/issues) following one of the issues templates. We will do our best to fix them.
 
 ## Contributing
 
-Of course, if you see something that you want to upgrade from this library, or a bug that needs to be solved, **PRs are welcome!**
+If you want to contribute to this project see [contributing](https://github.com/BlackBoxVision/styled-animation/blob/master/CONTRIBUTING.md) for more information.
 
 ## License
 
