@@ -11,7 +11,8 @@
     "build": "npm run clean && pack build",
     "test": "jest --passWithNoTests -- -u",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "@pika/pack": {
     "pipeline": [
