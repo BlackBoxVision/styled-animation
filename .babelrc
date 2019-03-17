@@ -1,4 +1,7 @@
 {
-  "presets": ["es2015", "stage-0", "react", "babili"],
-  "plugins": ["transform-runtime"]
+  "presets": ["@babel/preset-typescript", "@babel/preset-react"],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties"
+  ]
 }

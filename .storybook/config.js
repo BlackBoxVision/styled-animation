@@ -1,9 +1,14 @@
-import { configure } from '@storybook/react';
+import { addParameters, configure } from '@storybook/react';
 
-const req = require.context('../stories', true, /.stories.js$/)
+addParameters({
+  options: {
+    brandTitle: '@blackbox-vision/styled-animation',
+  },
+});
 
+const req = require.context('../stories', true, /.stories.tsx$/);
 function loadStories() {
-    req.keys().forEach(filename => req(filename))
+  req.keys().forEach(filename => req(filename));
 }
 
 configure(loadStories, module);
