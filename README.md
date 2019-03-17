@@ -23,7 +23,7 @@ npm install --save @blackbox-vision/styled-animation
 The usage is really simple:
 
 ```jsx
-import { Animation } from 'styled-animation';
+import { Animation } from '@blackbox-vision/styled-animation';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -39,7 +39,7 @@ ReactDOM.render(<Example />, document.getElementById('root'));
 Also is possible to merge multiple animations, separating each animation name by a space:
 
 ```jsx
-import { Animation } from 'styled-animation';
+import { Animation } from '@blackbox-vision/styled-animation';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
