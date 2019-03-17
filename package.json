@@ -96,6 +96,7 @@
     "@storybook/addon-links": "^5.0.1",
     "@storybook/addons": "^5.0.1",
     "@storybook/react": "^5.0.1",
+    "@storybook/storybook-deployer": "^2.8.1",
     "@storybook/theming": "^5.0.1",
     "@types/react": "^16.8.8",
     "@types/styled-components": "^4.1.12",
