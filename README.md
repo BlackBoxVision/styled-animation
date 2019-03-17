@@ -16,6 +16,10 @@ yarn add @blackbox-vision/styled-animation
 npm install --save @blackbox-vision/styled-animation
 ```
 
+## Use case
+
+If you need to integrate react-animations and styled-components, this library solves the problem giving you an `Animation` component ready for you to use.
+
 ## Usage
 
 ### Styled-animation supports all the animations provided by [react-animations](http://react-animations.herokuapp.com/)
