@@ -28,6 +28,7 @@ class Animation extends React.Component<AnimationProps> {
     if (this.element) {
       this.element.removeEventListener(getStartEvent(), this.props.onStart);
       this.element.removeEventListener(getEndEvent(), this.props.onEnd);
+      this.element = null;
     }
   }
 
