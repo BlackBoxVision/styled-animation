@@ -27,9 +27,9 @@ If you need to integrate react-animations and styled-components, this library so
 The usage is really simple:
 
 ```jsx
-import { Animation } from '@blackbox-vision/styled-animation';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Animation } from '@blackbox-vision/styled-animation';
 
 const Example = () => (
   <Animation name="fadeOutDown" duration="2s" timing="ease-out">
@@ -43,9 +43,9 @@ ReactDOM.render(<Example />, document.getElementById('root'));
 Also is possible to merge multiple animations, separating each animation name by a space:
 
 ```jsx
-import { Animation } from '@blackbox-vision/styled-animation';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Animation } from '@blackbox-vision/styled-animation';
 
 const Example = () => (
   <Animation name="shake bounce">Hey!, i'm mixed!</Animation>
