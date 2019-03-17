@@ -1,16 +1,16 @@
-# Styled Animation [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/styled-animation.svg)](https://badge.fury.io/js/styled-animation) [![npm downloads](https://img.shields.io/npm/dm/styled-animation.svg)](https://www.npmjs.com/package/styled-animation) [![Known Vulnerabilities](https://snyk.io/test/github/blackboxvision/styled-animation/badge.svg)](https://snyk.io/test/github/blackboxvision/styled-animation)
+# Styled Animation [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/%40blackbox-vision%2Fstyled-animation.svg)](https://badge.fury.io/js/%40blackbox-vision%2Fstyled-animation) [![npm downloads](https://img.shields.io/npm/dm/styled-animation.svg)](https://www.npmjs.com/package/styled-animation) [![Known Vulnerabilities](https://snyk.io/test/github/blackboxvision/styled-animation/badge.svg)](https://snyk.io/test/github/blackboxvision/styled-animation)
 
 Handle animations with style :sunglasses:.
 
 ## Installation
 
-**YARN**
+### YARN
 
 ```javascript
 yarn add @blackbox-vision/styled-animation
 ```
 
-**NPM**
+### NPM
 
 ```javascript
 npm install --save @blackbox-vision/styled-animation
@@ -52,14 +52,16 @@ ReactDOM.render(<Example />, document.getElementById('root'));
 
 ## Props
 
-| Prop              | Description                                         |
-| ----------------- | --------------------------------------------------- |
-| name: String      | Name or names of the animations to start            |
-| duration: String  | Indicates the duration of the animation             |
-| timing: String    | Indicates the timing of the animation               |
-| fillMode: String  | Indicates the animation-fill-mode value             |
-| onStart: Function | Callback called when the animation keyframes start  |
-| onEnd: Function   | Callback called when the animation keyframes finish |
+`Slot` and `Fill` components use the same props, which are the following ones:
+
+| Properties | Types    | Default Value | Description                                          |
+| ---------- | -------- | ------------- | ---------------------------------------------------- |
+| name       | string   | none          | Name or names of the animations to start.            |
+| duration   | string   | none          | Indicates the duration of the Animation.             |
+| timing     | string   | none          | Indicates the timing of the animation.               |
+| fillMode   | string   | none          | Indicates the animation-fill-mode value.             |
+| onStart    | Function | none          | Callback called when the animation keyframes start.  |
+| onEnd      | Function | none          | Callback called when the animation keyframes finish. |
 
 ## Issues
 
