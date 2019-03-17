@@ -1,4 +1,4 @@
-# Styled Animation [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/%40blackbox-vision%2Fstyled-animation.svg)](https://badge.fury.io/js/%40blackbox-vision%2Fstyled-animation) [![Known Vulnerabilities](https://snyk.io/test/github/blackboxvision/styled-animation/badge.svg)](https://snyk.io/test/github/blackboxvision/styled-animation)
+# Styled Animation [![npm version](https://badge.fury.io/js/%40blackbox-vision%2Fstyled-animation.svg)](https://badge.fury.io/js/%40blackbox-vision%2Fstyled-animation) [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) [![Known Vulnerabilities](https://snyk.io/test/github/blackboxvision/styled-animation/badge.svg)](https://snyk.io/test/github/blackboxvision/styled-animation)
 
 Handle animations with style :sunglasses:. Check out the [demo](https://blackboxvision.github.io/styled-animation/).
 
