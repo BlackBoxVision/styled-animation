@@ -1,72 +1,49 @@
 import React from 'react';
-import * as animations from 'react-animations';
-import ReactDOM from 'react-dom';
-import styled, { keyframes } from 'styled-components';
-import { whichEndEvent, whichStartEvent } from '../../helpers';
+import { getEndEvent, getStartEvent } from '../../helpers';
+import BaseAnimation from './components/BaseAnimation';
 
-const Animation = styled.div`
-  animation: ${props => frames(props.name)}
-    ${props => (props.duration ? props.duration : '1s')}
-    ${props => (props.timing ? props.timing : 'ease')};
-  animation-fill-mode: ${props =>
-    props.fillMode ? props.fillMode : 'forwards'};
-`;
-
-const mergeAnimations = animationArray =>
-  animationArray.reduce((prev, next, index) =>
-    animations.merge(index ? prev : animations[prev], animations[next])
-  );
-
-const frames = name => {
-  const selectedAnimations = name.split(' ');
-  return keyframes`${
-    selectedAnimations.length > 1
-      ? mergeAnimations(selectedAnimations)
-      : animations[name]
-  }`;
-};
-
-export interface AnimationContainerProps {
+export interface AnimationProps {
+  name: string;
+  timing: string;
+  duration: string;
+  fillMode: string;
+  children?: any;
   onEnd: Function;
   onStart: Function;
-  children?: any;
-  name?: any;
-  duration?: any;
-  timing?: any;
-  fillMode?: any;
 }
 
-class AnimationContainer extends React.Component<AnimationContainerProps> {
-  static displayName = 'AnimationContainer';
+class Animation extends React.Component<AnimationProps> {
+  static displayName = 'Animation';
 
-  _setAnimationLifeCycle = ref => {
-    if (ref) {
-      const { onStart, onEnd } = this.props;
+  element = null;
 
-      const node = ReactDOM.findDOMNode(ref);
-      node.addEventListener(whichStartEvent(), onStart);
-      node.addEventListener(whichEndEvent(), onEnd);
+  componentDidMount() {
+    if (this.element) {
+      this.element.addEventListener(getStartEvent(), this.props.onStart);
+      this.element.addEventListener(getEndEvent(), this.props.onEnd);
     }
+  }
+
+  componentWillUnmount() {
+    if (this.element) {
+      this.element.removeEventListener(getStartEvent(), this.props.onStart);
+      this.element.removeEventListener(getEndEvent(), this.props.onEnd);
+    }
+  }
+
+  setElement = element => {
+    this.element = element;
   };
 
   render() {
-    const { children, name, duration, timing, fillMode } = this.props;
-    const animationProps = {
-      name,
-      duration,
-      timing,
-      fillMode,
-    };
+    const { children, ...animationProps } = this.props;
 
     return (
-      <Animation
-        ref={animation => this._setAnimationLifeCycle(animation)}
-        {...animationProps}
-      >
+      <BaseAnimation {...animationProps} ref={this.setElement}>
         {children}
-      </Animation>
+      </BaseAnimation>
     );
   }
 }
 
-export default AnimationContainer;
+export default Animation;

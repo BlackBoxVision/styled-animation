@@ -21,5 +21,7 @@ function whichEvent(events) {
   }
 }
 
-export const whichStartEvent = _ => whichEvent(startEvents);
-export const whichEndEvent = _ => whichEvent(endEvents);
+export type EventFunction = () => string;
+
+export const getStartEvent: EventFunction = () => whichEvent(startEvents);
+export const getEndEvent: EventFunction = () => whichEvent(endEvents);
